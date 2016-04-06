@@ -11,3 +11,5 @@ This was based on my earlier (also made up) website for Te Atatu Squash Club htt
 
 
 I'm making this website because the Rutherford College physics teachers have come and left in the past year, which has made it difficult for Level 3 students, due to the need to adapt to multiple teaching styles within the span of one year.
+
+I started this website in 2015 with the aim of making it go live, but unforeseeably, I fell out of love with actual physics content as the year went on, so the uploading of content will be much slower than what's said on the site.
