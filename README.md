@@ -6,6 +6,8 @@ Responsive HTML5, CSS3 and JavaScript revision site from scratch for NCEA L3 phy
 Everything is made up, I haven't tried where the phone numbers actually lead to ;)
 Full brief development and prototyping documentation available (on request).
 
+Reported issues: slideshow sometimes glitchy on Chrome (doesn't affect functionality, the transitions are just not as smooth), but is fine if refreshed.
+
 This was based on my earlier (also made up) website for Te Atatu Squash Club http://abbyjshen.github.io/ (I also have full documentation)
 
 
