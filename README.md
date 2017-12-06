@@ -1,6 +1,6 @@
 # ashe848.github.io
 
-Just started with GitHub, so stuff is slowly being added as I figure out how everything works here :)
+## recent and legacy website code put together in 1 place
 
 Responsive HTML5, CSS3 and JavaScript revision site from scratch for NCEA L3 physics students. Works on all common devices in both horizontal and portrait orientation, and on Safari reader mode.
 Everything is made up, I haven't tried where the phone numbers actually lead to ;)
@@ -8,7 +8,7 @@ Full brief development and prototyping documentation available (on request).
 
 Reported issues: slideshow sometimes glitchy on Chrome (doesn't affect functionality, the transitions are just not as smooth), but is fine if refreshed.
 
-This was based on my earlier (also made up) website for Te Atatu Squash Club http://abbyjshen.github.io/ (I also have full documentation)
+This was based on my earlier (also made up) website for Te Atatu Squash Club (I also have full documentation)
 
 
 
