@@ -1,0 +1,411 @@
+﻿/*HEAD and NAVIGATION*/
+
+/*TASC logo and hover transition*/
+#logo {
+	width: 200px;
+	height: 197px;
+	transition: opacity .2s ease-in-out; /*standard syntax*/
+	-webkit-transition: opacity .2s ease-in-out; /*vendor prefix for Webkit (Chrome and Safari 4+) */
+	-moz-transition: opacity .2s ease-in-out; /*vendor prefix for Firefox*/
+	-ms-transition: opacity .2s ease-in-out; /* vendor prefix for IE10+ */
+	-o-transition: opacity .2s ease-in-out; /* vendor prefix for Opera 11.10+ */
+	margin-bottom: -5px;
+	padding: 5px;
+}
+
+#logo:hover {
+	opacity: 0.85;
+}
+
+/*centred navigation, footer and logo*/
+nav, footer, #logo {
+	display: block;
+	margin: 0 auto;
+}
+
+nav {
+	padding: 19.5px 30px;
+	height: 30px;
+	font-size: 20px;
+}
+
+nav, footer {
+	width: 1000px;
+	background-color: #082235; /*dark blue*/
+}
+
+/*all links (including visited) styled the same*/
+nav li a, footer a, footer a:visited {
+	color: #10BCF1; /*cyan*/
+	text-decoration:none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+
+/*navigation bars in header and footer styled as listed links*/
+nav li a {
+	text-shadow: 2px 2px 2px #104368; /*Prussian blue*/
+	padding: 5px 15px;
+}
+
+nav ul li {
+	padding-left: 65px;
+}
+
+nav ul li, #footerright ul li {
+	display: inline;
+}
+
+nav, #footerright ul li {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: "Calibri", sans-serif;	
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*footer navigation and copyright and last edited*/
+#footerright a:hover {
+	text-decoration: underline;
+}
+
+#footerright ul li, #footerright a, #footerright a:visited {
+	padding: 4px;
+	text-align: right;
+	font-size: 10px;
+}
+
+#footerright  {
+	width: 324px;
+	float: right;
+}
+
+/*white background for active and hovered links*/
+.footernav a:hover, nav li a:hover, .active{
+	background: #EFEFE9; /*Alice blue*/
+	text-shadow: none;
+}
+
+/*transitions*/
+nav li a, footer a, footer a:visited, .copyright, .figure {
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+
+
+/*BODY*/
+
+/*blue text*/
+span, h1, header, header a {
+	color: #10BCF1; /*cyan*/
+	text-decoration: none;
+	font: bold Arial, sans-serif;
+}
+
+header, header a {
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+/*welcome text on home page*/
+.welcome {
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 180%;
+}
+
+header {
+	padding: 10px;
+}
+
+header a {
+	padding: 0px;
+}
+
+body {
+	background-color: #DEF1FA; /*light blue*/
+	margin: 0 auto;
+}
+
+sup {
+	vertical-align: baseline;
+   	position: relative;
+   	top: -0.4em; /*so superscript doesn't affect the line-height*/
+}
+
+/*body content*/
+#body {
+	background: linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); /*white to light blue*/
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DEF1Fa)); 
+	background: -webkit-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); /* vendor prefix for Chrome10+ and Safari 5.1+ */
+	background: -o-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	background: -ms-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	color: #082235; /*dark blue*/
+	font-size: 14px;
+	font-family: "Verdana", "Arial", sans-serif;
+	line-height: 150%;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 30px;
+	height: 100%;
+	overflow: auto;
+}
+
+.centre a /*links in body content*/ {
+	color: #082235; /*dark blue*/
+}	
+
+/*Left Column*/
+
+.left {
+	float: left;
+	margin-right: 20px;
+}
+
+/*embedded Google Maps and Calendar*/
+iframe {
+	border: none;
+}
+
+.events iframe  /*events agenda*/{
+	width: 220px;
+	height: 530px;
+	padding: 0;
+}
+
+/*sections with dotted border*/
+.events,.info,.email {
+	border:1px dotted #10BCF1; /*cyan*/
+	border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	margin-bottom: 20px;
+	width: 220px; 
+}
+
+/*Right Column*/
+
+.right {
+	float: right;
+	margin-left: 20px;
+}
+
+.info iframe /*map*/ {
+	width: 200px;
+	height: 180px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Email Newsletter*/
+
+#sign-up label { 
+	display: block; 
+	font: bold 12px Arial, sans-serif; 
+	line-height: 1.5em; 
+	color: #082235; /*dark blue*/
+}
+
+#sign-up fieldset {
+	border: none;
+	margin: 0px;
+}
+
+input:focus /*when clicked into the box*/{
+	outline: none;
+	box-shadow: 0 0 3px #10BCF1; /*cyan*/
+	-webkit-box-shadow: 0 0 3px #10BCF1;
+	-moz-box-shadow: 0 0 3px #10BCF1;
+	-ms-box-shadow: 0 0 3px #10BCF1;
+}
+
+/*the boxes*/ 
+#sign-up fieldset input[type="text"], #sign-up fieldset input[type="email"]{ 
+	padding: 8px 8px; 
+	width: 180px;
+	font-size: 11px;
+	color: #082235; /*dark blue*/
+	border: none; 
+	background: #FFFFFF; /*white*/
+	border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-ms-border-radius: 5px; 
+	-o-border-radius: 5px; 
+}
+
+/*overwriting default placeholder text styles in Firefox and IE*/
+::-moz-placeholder {
+	font-family: Arial, sans-serif;
+}
+
+:-ms-input-placeholder {  
+	font-family: Arial, sans-serif;
+}
+
+/*subscribe button*/	
+#sign-up input[type="submit"] {
+	margin-right: 10px;
+	padding: 8px 15px;
+	font: bold 12px Arial, sans-serif;
+	text-transform: uppercase;
+	line-height: 1;
+	color: #082235; /*dark blue*/
+	text-shadow: 1px 1px 1px #FFF; /*white*/
+	border: none;
+	background-image: linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); /*white to light blue*/
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DEF1FA)); 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #DEF1FA 100%); 
+	background-color: #DEF1FA; /*light blue*/
+	border-radius: 5px;	
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-ms-border-radius: 5px; 
+	-o-border-radius: 5px; 
+	cursor: pointer;
+}
+
+#sign-up input[type="submit"]:hover {
+	box-shadow: 1px 1px 3px #10BCF1; /*cyan*/
+	-webkit-box-shadow: 1px 1px 3px #10BCF1;
+	-moz-box-shadow: 1px 1px 3px #10BCF1;
+	-ms-box-shadow: 1px 1px 3px #10BCF1;
+}
+
+/*Social Networks*/
+
+.networks img {
+	margin: 3px;
+}
+
+/*Centre of Page*/
+
+.centre {
+	float: left;
+	width: 510px;
+}
+
+/*centent of Events page (no left column)*/
+#centre {
+	float: left;
+	width: 740px;
+}
+
+.centre iframe {
+	width: 510px;
+	height: 520px;
+	padding: 0;
+}
+
+#centre iframe /*events calendar*/{
+	width: 740px;
+	height: 700px;
+	padding: 0;
+}
+
+.centre img {
+	width: 510px;
+	height: 383px;
+}
+
+/*News*/
+
+.item {
+	margin-bottom: 5px;
+	padding: 2px 0 2px 2px;
+	width: 470px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-transition: width 0.2s linear;
+	-moz-transition: width 0.2s linear;
+	-o-transition: width 0.2s linear;
+	transition: width 0.2s linear;
+}
+
+.item:hover {
+	width: 500px;
+	background: #FFFFFF;
+}
+
+.item header {
+	padding: 0px;
+}
+
+.item p, .via {
+	color: #082235; /*dark blue*/
+	font-size: 11px;
+	line-height: 100%;
+}
+
+.via {
+	text-decoration: underline;
+}
+
+.excerpt {
+	width: 450px;
+	margin: 15px 10px 40px;
+	font-size: 12px;
+}
+
+/*FOOTER*/
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 10px 30px;
+	height: 125px;
+}
+
+.figure /*back to top button*/ {
+	float: left;
+	text-align: center;
+	border:1px dotted #10BCF1; /*cyan*/
+	border-radius: 20%;
+	-moz-border-radius: 20%;
+	-webkit-border-radius: 20%;
+	-ms-border-radius: 20%;
+	-o-border-radius: 20%;
+	padding:5px;
+	margin-left: 0px;
+	opacity: .2;
+}
+
+figcaption /*the back to top caption*/{
+	font-family: "Arial", serif;
+	font-size: 12px;
+	text-align: center;
+	line-height: 125%;
+}
+
+.copyright /*copyright and last edited*/{
+	float: right;
+	font: normal 10px Verdana, sans-serif;
+	line-height: 10px;
+	color: #000000; /*black*/
+	opacity: .15;
+	margin-top: 20px;
+}
+
+.copyright:hover,.figure:hover  {
+	opacity: 1;
+}
