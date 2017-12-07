@@ -1,0 +1,337 @@
+/*Lots of customisations for colour, font, margins, etc.
+By Abby-Junyi Shen*/
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand img {
+	height: 50px;
+	margin-top: -5px;
+}
+
+.navbar-brand {
+	opacity: 1;
+}
+
+.navbar-brand:hover {
+	opacity: 0.8;
+}
+
+#submittedAlert {
+	display: none;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.modal-dialog {
+	width: 90%;
+}
+
+.modal-body, .modal-footer {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+#accordion h4 {
+	display: inline;
+}
+
+.accordionPanel:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	float: right;
+	display: inline;
+	color: #22AF41;
+}
+
+.accordionPanel.collapsed:after, .dummy:after {
+	content: "\e080";
+}
+
+.accordionPanel {
+	cursor:pointer;
+}
+
+.modal-header {
+	color:#fff;
+	padding:9px 15px;
+	border-bottom:1px solid #0D912A;
+	background-color: #22AF41;
+	-webkit-border-top-left-radius: 18px;
+	-webkit-border-top-right-radius: 18px;
+	-moz-border-radius-topleft: 18px;
+	-moz-border-radius-topright: 18px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+}
+
+.navbar-default {
+	background-color: #22AF41;
+	border: none;
+	font-size: 17px;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li >a:focus{
+	color: #fff;
+	margin: 0px 5px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav a:active, .navbar-default .navbar-nav>li >a:hover, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #22AF41;
+	background-color: #fff;
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: #22AF41;
+	color: #fff;
+	font-size: 17px;
+}
+
+.dropdown-menu>li>a {
+	color: #22AF41;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #22AF41;
+	border-color: #0D912A;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
+	color: #fff;
+	background-color: #41BC5C;
+	border-color: #0D912A;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.nav-pills>li {
+	margin: 10px;
+}
+
+.nav a.dropdown-toggle, li.dropdown, a.navbar-brand{
+	line-height:40px;
+	vertical-align: middle;
+}
+
+.nav a.dropdown-toggle {
+	margin: 0px;
+}
+
+ul.dropdown-menu {
+	margin: 5px;
+	border: 0px;
+	width: 188px;
+}
+
+.dropdown-menu>.disabled>a, .dropdown-menu>.disabled>a:focus, .dropdown-menu>.disabled>a:hover {
+	color: #bbbbbb;
+}
+
+.alert-success {
+	background-color: #e1f5e5;
+	color: #0D912A;
+	border-color: #41BC5C;
+}
+
+h1,h2,h3,h4{
+	margin: 20px 0px;
+}
+
+h1,h2,h3,p.text-right{
+	font-family: "Bookman Old Style", Helvetica, Arial, sans-serif;
+}
+
+.glyphicon-time {
+	vertical-align: top;
+	line-height: 17px;
+	padding: 1px;
+}
+
+h1,h2,h3{
+	font-weight: bold;
+}
+
+h1,h3 {
+	color: #0D912A;
+}
+
+h2 {
+	color: #fff;
+}
+
+.modal-title {
+	margin: 20px 0px;
+}
+
+.panel-group {
+	margin-top: 40px;
+}
+
+.panel-default>.panel-heading {
+	background-color: #c3eccc;
+	border-color: #0D912A;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background-color: #f7fcf8;
+	opacity: 1;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.feedback::-webkit-input-placeholder {
+	color: #00390c;
+}
+
+.feedback:-moz-placeholder {
+	color: #00390c;
+}
+
+.feedback::-moz-placeholder {
+	color: #00390c;
+}
+
+.feedback:-ms-input-placeholder {
+	color: #00390c;
+}
+
+.feedback {
+	margin-bottom: 15px;
+}
+
+#feedback .panel {
+	margin-top: 10px;
+}
+
+.feedback:focus {
+	box-shadow: none;
+}
+
+.form-control:focus {
+	border-color:#41BC5C;
+	box-shadow: none;
+}
+
+label.disabledLabel {
+	cursor: not-allowed;
+}
+
+label {
+	color: #00390c;
+}
+
+#feedback .panel-default>.panel-heading {
+	border: none;
+}
+
+.table>thead>tr>th {
+	color: #00390c;
+	border-bottom: 1px solid #22AF41;
+	font-weight: normal;
+	font-size: 18px;
+	vertical-align: bottom;
+}
+
+.table>tbody>tr>td {
+	vertical-align: middle;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.table>tbody>tr>td p, .table>tbody>tr>td label {
+	font-size: 16px;
+}
+
+.table>tbody>tr>td p.lead {
+	margin: 0px;
+}
+
+.table>tbody>tr>td li {
+	line-height: 2;
+	font-family: "Corbel", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.table>tbody>tr>td div.radio, .table>tbody>tr>td p, .table>tbody>tr>td label {
+	line-height: 24px;
+	font-size: 15px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 8px 0px;
+}
+
+.glyphicon-pencil {
+	padding: 0px 5px;
+}
+
+#accordion {
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+
+div.modal-content {
+	border-radius: 20px;
+}
+
+p.text-right {
+	font-size: 17px;
+}
+
+body {
+	font-size: 15px;
+}
+
+blockquote {
+	font-size: 14px;
+}
+
+p.lead {
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+form {
+	margin-top: 50px;
+}
+
+#feedback form {
+	margin-top: 0px;
+}
+
+#feedback div.panel-body {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.alert-success .alert-link {
+	color: #0D912A;
+}
+
+table {
+	margin-top: 50px;
+}
+
+div.radio label {
+	padding: 0px;
+}
+
+.form-horizontal .radio {
+	padding: 0px;
+}
+
+div.radio {
+	margin-left: 20px;
+}
+
+.form-group {
+	margin-top: 20px;
+}
