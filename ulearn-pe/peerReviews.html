@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- START HEAD -->
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Peer Reviews section">
+  <meta name="author" content="Abby-Junyi Shen">
+
+  <title>Peer Reviews</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet">
+
+</head>
+<!-- END HEAD -->
+
+<!-- START BODY -->
+<body onload="loadPR()">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img alt="ULearn Logo" src="images/ULearnLogo.png" /></a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Physical Education <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Go to:</li>
+          <li><a href="#">Art History</a></li>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">French</a></li>
+          <li class="disabled"><a href="#">Physical Education</a></li>
+          <li><a href="#">Statistics</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">ULearn Home</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav nav-pills">
+      <li><a href="#">Course Information</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="index.html">Assignments</a></li>
+      <li class="active"><a href="#">Peer Reviews</a></li>
+      <li><a href="#">Practice</a></li>
+      <li><a href="#">Extra for Experts</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Peer Reviews</h1>
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Assignment</th>
+              <th>Feedback</th>
+              <th>Peer Group Members to Review</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lactic Acid Quiz</td>
+              <td>
+                <span id="reviewFred">Review Fred to see feedback</span>
+
+                <!-- FEEDBACK SUMMARY -->
+                <button type="button" class="btn btn-primary" onclick="loadYourComment()" id="feedbackButton" data-toggle="modal" data-target="#feedback">View Feedback</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="feedback" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title text-center">Lactic Acid Quiz - Group Feedback Summary</h2>
+                      </div>
+
+                      <div class="modal-body">
+                        <!-- Q1 -->
+                        <h3 class="text-center">Question 1</h3>
+                        <h4 class="text-center">Which specific aspect of exercise does the diesease affect?</h4>
+
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                          <!-- Your Answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel" role="tab" data-toggle="collapse" href="#your" aria-expanded="true">
+                              <h4 class="panel-title accordionTitle">Your Answer</h4>
+                            </div>
+                            <div id="your" class="panel-collapse collapse in" role="tabpanel">
+                              <div class="panel-body">
+
+                                <form class="form-horizontal">
+                                  <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control feedback" placeholder="It affects the Krebs cycle and lorem ipsum dolor sit amet." readonly>
+                                      <p class="form-control-static">
+                                        Aggregrated comments:
+                                        <ul>
+                                          <li>I got the same, so it must be correct!</li>
+                                          <li>This is a long comment, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                          <li>Correct, best to also specify ut enim ad minim veniam, quis nostrud exercitation ullamco</li>
+                                        </ul>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </form>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Blake's Answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel" role="tab" data-toggle="collapse" href="#blake" aria-expanded="false">
+                              <h4 class="panel-title accordionTitle">Blake's Answer</h4>
+                            </div>
+                            <div id="blake" class="panel-collapse collapse" role="tabpanel">
+                              <div class="panel-body">
+
+                                <form class="form-horizontal">
+                                  <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control feedback" placeholder="It affects Krebs and ATP synthesis." readonly>
+                                      <p class="form-control-static">
+                                        Aggregrated comments:
+                                        <ul>
+                                          <li>Correct!</li>
+                                          <li>Correct!</li>
+                                          <li>Correct!</li>
+                                        </ul>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </form>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Fred's answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel" role="tab" data-toggle="collapse" href="#fred" aria-expanded="false">
+                              <h4 class="panel-title accordionTitle">Fred's Answer</h4>
+                            </div>
+                            <div id="fred" class="panel-collapse collapse" role="tabpanel">
+                              <div class="panel-body">
+
+                                <form class="form-horizontal">
+                                  <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control feedback" placeholder="It affects the person that is exercising" readonly>
+                                      <p class="form-control-static">
+                                        Aggregrated comments:
+                                        <ul>
+                                          <li id="yourComment">This is the comment you left for Fred. It will show here.</li>
+                                          <li>Duh!!! Of course it's the person not the shoes, clothes, or equipment!</li>
+                                          <li>More specific. Which part of the body? It was detailed in lecture 12, I think you missed lecture, but the recordings are up now :)</li>
+                                        </ul>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </form>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Caroline's answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel" role="tab" data-toggle="collapse" href="#caroline" aria-expanded="false">
+                              <h4 class="panel-title accordionTitle">Caroline's Answer</h4>
+                            </div>
+                            <div id="caroline" class="panel-collapse collapse" role="tabpanel">
+                              <div class="panel-body">
+
+                                <form class="form-horizontal">
+                                  <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control feedback" placeholder="Krebs Cycle and beyond" readonly>
+                                      <p class="form-control-static">
+                                        Aggregrated comments:
+                                        <ul>
+                                          <li>Correct!</li>
+                                          <li>Correct!</li>
+                                          <li>Correct!</li>
+                                        </ul>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </form>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <h3 class="text-center">Question 2</h3>
+                        <h4 class="text-center">What is the impact on ATP production?</h4>
+                        <div class="panel-group" id="accordion">
+                          <!-- Your Answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Your Answer</h4>
+                            </div>
+                          </div>
+                          <!-- Blake's Answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Blake's Answer</h4>
+                            </div>
+                          </div>
+                          <!-- Fred's answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Fred's Answer</h4>
+                            </div>
+                          </div>
+                          <!-- Caroline's answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Caroline's Answer</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <h3 class="text-center">Question 3</h3>
+                        <h4 class="text-center">Using the cellular processes, explain your answer to Question 2. Detail what part of the process is affected by the disease, and how it ultimately reflects on the number of ATP produced.</h4>
+                        <div class="panel-group" id="accordion">
+                          <!-- Your Answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Your Answer</h4>
+                            </div>
+                          </div>
+                          <!-- Blake's Answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Blake's Answer</h4>
+                            </div>
+                          </div>
+                          <!-- Fred's answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Fred's Answer</h4>
+                            </div>
+                          </div>
+                          <!-- Caroline's answer -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading accordionPanel dummy">
+                              <h4 class="panel-title accordionTitle">Caroline's Answer</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <!-- REVIEWS -->
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default disabled">Blake Mendez</button>
+
+                  <button type="button" class="btn btn-primary" id="fredButton" data-toggle="modal" data-target="#fredChan">Fred Chan</button>
+                  <button type="button" class="btn btn-default disabled" id="fredDisabledButton">Fred Chan</button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="fredChan" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title text-center">Lactic Acid Quiz - Fred</h2>
+                        </div>
+
+                        <div class="modal-body">
+                          <p class="lead">This peer review is for Fred Chan's initial submission to the Lactic Acid Quiz.
+                            <br />
+                            <br />
+                            While he may have returned to make changes to his submission already, some assignments in this course have a peer review component to give group members the opportunity to provide each other with student to student feedback. The purpose is for you each to pick up feedback from your peers and subsequently make any changes to your quiz before your final submission.
+                            <br />
+                            <br />
+                            There will be another peer review on final submissions after the deadline.
+                            <br />
+                            <br />
+                            Note: Your comments are anonymous and will be collated into a randomly ordered list for Fred to view.
+                          </p>
+
+                          <form class="form-horizontal">
+                            <!-- Q1 -->
+                            <div class="form-group">
+                              <label for="Q1" class="col-sm-1 control-label">Question 1</label>
+                              <div class="col-sm-11">
+                                <p class="form-control-static">Which specific aspect of exercise does the diesease affect?</p>
+                                <input type="text" class="form-control feedback" id="Q1" placeholder="It affects the person that is exercising" readonly>
+                                <textarea class="form-control" rows="2" placeholder="Your comment..." id="Q1comment"></textarea>
+                              </div>
+                            </div>
+
+                            <!-- Q2 -->
+                            <div class="form-group">
+                              <label class="col-sm-1 control-label">Question 2</label>
+                              <div class="col-sm-11">
+                                <p class="form-control-static">What is the impact on ATP production?</p>
+                                <div class="radio" disabled>
+                                  <label class="disabledLabel"><input type="radio" name="Q2RadiosFred" value="increases" disabled>Increases</label>
+                                </div>
+                                <div class="radio">
+                                  <label class="disabledLabel"><input type="radio" name="Q2RadiosFred"  value="decreases" checked disabled>Decreases</label>
+                                </div>
+                                <div class="radio">
+                                  <label class="disabledLabel"><input type="radio" name="Q2RadiosFred" value="no impact" disabled>Has no impact</label>
+                                </div>
+                                <textarea class="form-control" rows="2" placeholder="Your comment..."></textarea>
+                              </div>
+                            </div>
+
+                            <!-- Q3 -->
+                            <div class="form-group">
+                              <label for="Q3" class="col-sm-1 control-label">Question 3</label>
+                              <div class="col-sm-11">
+                                <p class="form-control-static">Using the cellular processes, explain your answer to Question 2. Detail what part of the process is affected by the disease, and how it ultimately reflects on the number of ATP produced.</p>
+                                <textarea class="form-control feedback" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." readonly></textarea>
+                                <textarea class="form-control" rows="2" placeholder="Your comment..."></textarea>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Save and Close</button>
+                          <button type="button" class="btn btn-primary btn-lg" onclick="submitReview()" data-dismiss="modal">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-default disabled">Caroline Cruiser</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- some other assignment -->
+            <tr>
+              <td>Some Other Assignment</td>
+              <td>
+                <button type="button" class="btn btn-primary" >View Feedback</button>
+              </td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default disabled">Blake Mendez</button>
+                  <button type="button" class="btn btn-default disabled">Fred Chan</button>
+                  <button type="button" class="btn btn-default disabled">Caroline Cruiser</button>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <!-- jQuery Version 1.11.1 -->
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/functions.js"></script>
+
+</body>
+<!-- END BODY -->
+
+</html>
