@@ -1,4 +1,4 @@
-var to="exam day on Tuesday, 15 November!"
+var to="exam day on Tuesday, 20th November!"
 var current="Today is the day, good luck!"
 var monthsarray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
 
@@ -36,5 +36,4 @@ function countdown(year,month,day){
 	setTimeout("countdown(theyear,themonth,theday)",1000)
 }
 
-// the count down to date, will be negative if this date is in the past
-countdown(2016,11,15)
+countdown(2018,11,20)
