@@ -7,7 +7,7 @@ Development of the website initiated due to Rutherford College physics teachers 
 Full brief development and prototyping documentation available on request.
 
 ## ULearn PE
-Peer assignment and group review platform proof of concept for the extension to make the ULearn revision site more interactive.
+Group assignment and peer review platform proof of concept for the extension to make the ULearn revision site more interactive.
 
 ## TASC
 Website for a potential Squash Club based at the Te Atatu squash courts. Full documentation and brief development also available.
