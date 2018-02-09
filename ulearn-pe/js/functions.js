@@ -4,7 +4,7 @@ function loadAssignment(){
 
 function populateLatestSubmission(){
   if(localStorage.getItem("latestSavedSubmission") === null){
-    localStorage.setItem("latestSavedSubmission", "26/05/2017 11:23:46 AM");
+    localStorage.setItem("latestSavedSubmission", "01/03/2018 11:23:46 AM");
   }
   document.getElementById('latestSubmission').innerHTML=localStorage.getItem("latestSavedSubmission");
 }
